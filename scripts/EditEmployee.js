@@ -17,7 +17,7 @@ const id = params.get("id");
 
 async function getEditEmployee() {
   try {
-    let resp = await fetch(`http://localhost:5000/employees/${id}`);
+    let resp = await fetch(`https://crud-application-rk5y.onrender.com/employees/${id}`);
     let data = await resp.json();
     console.log(data);
 
