@@ -1,38 +1,3 @@
 {
-  "employees": [
-    {
-      "id": "834b",
-      "firstname": "John",
-      "middlename": "Anthony",
-      "lastname": "Doe",
-      "dob": "2026-02-03",
-      "email": "john@gmail.com",
-      "maritalstatus": "single",
-      "phoneno": "9876543210",
-      "address": {
-        "street": "B4, sector 3",
-        "city": "Noida",
-        "state": "UP",
-        "country": "India",
-        "zipcode": "201301"
-      }
-    },
-    {
-      "firstname": "Sachidanand",
-      "middlename": "Kumar",
-      "lastname": "Prajapati",
-      "dob": "2026-02-13",
-      "email": "unishprajapati19@gmail.com",
-      "maritalstatus": "single",
-      "phoneno": "09876543210",
-      "address": {
-        "street": "lucknow",
-        "city": "lucknow",
-        "state": "Uttar Pradesh",
-        "country": "India",
-        "zipcode": "227202"
-      },
-      "id": "TiACMG7"
-    }
-  ]
+  "employees": [ ]
 }
