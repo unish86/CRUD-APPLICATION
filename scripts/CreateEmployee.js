@@ -35,13 +35,16 @@ employeeFormEle.addEventListener("submit", async (e) => {
   };
 
   try {
-    let resp = await fetch("https://crud-application-rk5y.onrender.com", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newEmployeeData), // <-- SEND EMP DATA IN JSON-FORMAT
-    });
+    let resp = await fetch(
+      "https://crud-application-rk5y.onrender.com/employees",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newEmployeeData), // <-- SEND EMP DATA IN JSON-FORMAT
+      }
+    );
     console.log(resp);
 
     // NAVIGATION

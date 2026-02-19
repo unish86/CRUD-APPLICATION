@@ -73,9 +73,12 @@ function displayEmployees(allEmployees) {
 
 async function handleDelete(id) {
   try {
-    let resp = await fetch(`https://crud-application-rk5y.onrender.com/${id}`, {
-      method: "DELETE",
-    });
+    let resp = await fetch(
+      `https://crud-application-rk5y.onrender.com/employees/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
 
     if (!resp.ok) {
       throw new Error("Delete failed");

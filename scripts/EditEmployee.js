@@ -17,7 +17,7 @@ const id = params.get("id");
 
 async function getEditEmployee() {
   try {
-    let resp = await fetch(`https://crud-application-rk5y.onrender.com/${id}`);
+    let resp = await fetch(`http://localhost:5000/employees/${id}`);
     let data = await resp.json();
     console.log(data);
 
@@ -65,13 +65,16 @@ employeeFormEle.addEventListener("submit", async (e) => {
   };
 
   try {
-    let resp = await fetch(`https://crud-application-rk5y.onrender.com/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(updatedEmployeeData),
-    });
+    let resp = await fetch(
+      `https://crud-application-rk5y.onrender.com/employees/${id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(updatedEmployeeData),
+      }
+    );
     console.log(resp);
     window.location.href = "AllEmployees.html";
   } catch (err) {
