@@ -2,7 +2,9 @@ const employeesContainerEle = document.getElementById("employees-container");
 
 async function getAllEmployees() {
   try {
-    let resp = await fetch(`https://crud-application-rk5y.onrender.com`);
+    let resp = await fetch(
+      `https://crud-application-rk5y.onrender.com/employees`
+    );
     let data = await resp.json();
     console.log(data); // [{},{},{},{}]
     displayEmployees(data);
